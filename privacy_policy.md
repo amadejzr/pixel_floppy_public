@@ -1,5 +1,5 @@
 # Privacy Policy  
-**Last Updated: [DATE]**
+**Last Updated: 27 November 2025**
 
 This Privacy Policy explains how **Pixel Floppy** (“the App”) handles user data.  
 The App is developed and maintained by **Amadej Jerlah s.p.**, based in Slovenia.
@@ -18,27 +18,35 @@ All user-created content—including trackers, tags, logs, notes, preferences, a
 - We do not store backups  
 - You fully control your data  
 
-### 1.2 Crash & Diagnostic Data (Sentry)
-To improve stability, we use **Sentry** to automatically capture **anonymous** diagnostics and crash logs.
+### 1.2 Crash & Diagnostic Data (Firebase Crashlytics)
+To improve stability, the App uses **Firebase Crashlytics** to capture **anonymous** crash and error diagnostics.
 
-Sentry may collect:
+Crashlytics may collect:
 - crash logs  
-- error traces  
+- non-personal error diagnostics  
 - device model  
 - OS version  
 - app version  
+- minimal technical metadata required for debugging  
 
 This data:
 - does **not** contain personal information  
 - is **not linked** to your identity  
-- is used only for troubleshooting and performance improvement  
+- is used only for fixing bugs and improving performance  
+
+Crash reporting is **disabled by default**.  
+You can choose to enable anonymous crash reporting in:
+
+**Settings → Privacy → Crash Reporting**
+
+Only after enabling it will the App send crash logs to Firebase Crashlytics.
 
 ---
 
 ## 2. No Personal Information Collected
 The App does **not** collect or process:
 
-- your name  
+- name  
 - email address  
 - phone number  
 - contacts  
@@ -48,61 +56,57 @@ The App does **not** collect or process:
 - usage analytics tied to identity  
 - sensitive information  
 
-The App does **not** track you.
+The App does not track, profile, or identify you.
 
 ---
 
-## 3. Subscriptions & Payments
+## 3. Subscriptions and Payments
 
 Pixel Floppy uses **RevenueCat** to manage subscription validation.  
-RevenueCat **does not collect personal data** and only receives anonymous purchase receipts.
+RevenueCat receives only anonymous purchase receipts.  
+No personal information is collected.
 
 All purchases and payments are handled through:
-
-- **Apple (App Store)**  
-- **Google Play**
+- Apple App Store  
+- Google Play Store  
 
 We do not store or access:
 - payment information  
-- your Apple/Google account details  
+- Apple/Google account details  
 - personal identifiers  
 
-We only receive a **non-identifiable subscription status** (active or inactive) that unlocks premium features inside the App.
+We only receive a **non-identifiable subscription status** (active or inactive) that unlocks premium features within the App.
 
-Refunds must be requested directly through:
-- **iOS:** Settings → Apple ID → Subscriptions → Report a Problem  
-- **Android:** Google Play → Profile → Payments & Subscriptions  
+Refund requests must be submitted through:
+- iOS: Settings → Apple ID → Subscriptions → Report a Problem  
+- Android: Google Play → Profile → Payments & Subscriptions  
 
 ---
 
 ## 4. Data Deletion
 
-You can delete all App data at any time by going to:
+You can delete all App data at any time via:
 
 **Settings → Data & Privacy → Clear All Data**
 
-This permanently removes the local database stored on your device.
-
-You may also delete the App from your device to remove all remaining data.
+This permanently removes all local data stored on your device.  
+Deleting the App also removes remaining stored data.
 
 ---
 
 ## 5. Third-Party Services
 
-The App uses the following external services:
-
-### ✅ RevenueCat (Subscription Management)
+### RevenueCat (Subscription Management)  
 Used to validate subscriptions and unlock premium features.  
-Receives **anonymous** purchase information (no personal data).  
-Does **not** track users.
+Receives only anonymous purchase information.
 
-### ✅ Sentry (Crash Reporting)
-Used for diagnostics and crash analysis.  
-Does **not** collect personal data.  
-Not used for tracking or profiling.
+### Firebase Crashlytics (Crash Reporting)  
+Used for anonymous crash diagnostics to improve stability.  
+Disabled by default and only activated if you enable it in Settings.  
+Does not collect personal information.
 
-### ✅ Apple / Google Play Billing
-Handles all payment processing.  
+### Apple / Google Play Billing  
+Handles all payments.  
 We do not store or access any payment information.
 
 ---
@@ -114,14 +118,14 @@ We do not knowingly collect any data from children.
 ---
 
 ## 7. Changes to This Policy
-We may update this Privacy Policy occasionally.  
-Updates will be posted on the public page where this document is hosted.
+This Privacy Policy may be updated occasionally.  
+Updates will be published where this document is publicly available.
 
 ---
 
 ## 8. Contact
 
-If you have questions about privacy or data use, please contact:
+For privacy-related questions or concerns, please contact:
 
 **Amadej Jerlah s.p.**  
-📧 **amadej@jerlah.com**
+Email: **amadej@jerlah.com**
