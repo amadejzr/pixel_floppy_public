@@ -19,7 +19,9 @@ It is stored securely on your device and is never sent to us.
 
 ### 1.2 Information from Your Device
 
-- **Device contacts:** If you choose to import contacts, we access your device's address book with your explicit permission. We store only a reference identifier to link imported contacts — we do not upload your address book.
+- **Device contacts:** If you choose to import contacts, we access your device's address book with your explicit permission.
+The details of the contacts you select (name, phone, email, company, birthday) are copied into the App's on-device database, along with a reference identifier linking back to the address-book entry.
+We do not upload your address book.
 - **Microphone:** If you use voice input, we access your microphone with your permission so your device's built-in speech recognizer can transcribe what you say. The audio is handled by the operating system; the App does not save it to a file and never receives it.
 
 ### 1.3 Information We Do NOT Collect
@@ -109,10 +111,13 @@ We do not sell, rent, or share your personal data with any third party for marke
 Since all data is stored locally on your device:
 
 - **Delete individual records:** You can delete any contact, interaction, goal, or conversation within the App.
-- **Delete all data:** Use Settings → Data → Delete All Data to erase everything.
+- **Delete all data:** Use Settings → Data → Delete All Data to erase everything on your device, together with any iCloud backups the App created (see Section 3.2).
 - **Clear AI conversations:** Use Settings → AI Advisor → Clear Conversations.
 - **Remove API keys:** Remove your keys in Settings → AI Advisor.
+- **Export your data:** Use Settings → Data → Export Data to share a copy of your database with any app or destination you choose.
 - **Uninstall:** Deleting the App removes all locally stored data.
+  One exception is the API key you entered: iOS keeps Keychain items after an app is deleted, so the key stays in your device's Keychain.
+  Rootkeep erases it automatically the first time the App runs again, and you can remove it yourself at any time in Settings → AI Advisor.
 
 We have no server-side data to delete because we do not store your data on any server.
 
@@ -138,7 +143,7 @@ Depending on your jurisdiction (including under the GDPR, UK GDPR, or CCPA), you
 
 - **Access** your personal data — all your data is visible in the App at all times
 - **Delete** your data — see Section 5 above
-- **Port** your data — your data is stored locally and can be accessed on your device
+- **Port** your data — use Settings → Data → Export Data to get a copy of your database file, which you can save or move anywhere you like
 - **Restrict processing** — you can stop using AI features at any time by removing your API keys
 - **Withdraw consent** — you can revoke device permissions (contacts, microphone) in your device settings
 
